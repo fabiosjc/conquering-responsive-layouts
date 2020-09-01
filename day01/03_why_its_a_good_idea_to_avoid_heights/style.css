@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: #23424a;
+  color: white;
+
+  width: 80%;
+  margin: 0px auto;
+
+  /* This is a general rule.  There are times when you want to use height, but for the most part, they cause more issues than they solve. */
+  /* height: 300px */
+
+  /* If you need more heigths you can use padding: */
+  padding: 5rem; /* 5rem = 16 * 5 = 80px */
+}
