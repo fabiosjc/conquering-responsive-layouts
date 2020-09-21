@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why you shouldn't set font-sizes using em</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>The em Compounding Problem</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt at
+        possimus accusantium aperiam? Officia, nihil! Eaque adipisci sint
+        recusandae aliquid eum sit vel voluptatem ducimus eligendi odit, enim
+        libero iste?
+      </p>
+
+      <ul>
+        <!-- font-size: 1.125em -->
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Officia nostrum accusamus sit corporis corrupti.</li>
+        <li>
+          Sapiente magnam repellat fugiat at eius nihil voluptatem facere
+          cupiditate odit blanditiis!
+        </li>
+        <li>Laboriosam itaque cum tempore!</li>
+
+        <ul>
+          <!-- font-size: 1.125em * 1.125em -->
+          <li>Lorem ipsum</li>
+          <li>Officia nostrum accusamus</li>
+          <li>Sapiente magnam repellat fugiat</li>
+          <li>Laboriosam itaque</li>
+
+          <ul>
+            <!-- font-size: 1.125em * 1.125em * 1.125em -->
+            <li>Lorem</li>
+            <li>Officia</li>
+            <li>Sapiente</li>
+            <li>Laboriosam</li>
+          </ul>
+        </ul>
+      </ul>
+
+      <div class="cta">
+        <div class="cta__title">Buy your product</div>
+        <div class="cta__body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic
+          iure explicabo quam? Enim, provident, delectus sit adipisci esse
+          consectetur facilis a, temporibus blanditiis odit ullam culpa
+          architecto corporis incidunt.
+        </div>
+        <p><a href="#" class="cta__btn">Button</a></p>
+      </div>
+    </div>
+  </body>
+</html>
